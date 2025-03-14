@@ -47,9 +47,8 @@ export const UniverSheet = ({ className }: UniverSheetProps) => {
         ],
       });
 
-      univerRef.current = univerAPI;
-      univerAPI.createUniverSheet({ name: 'Champions League Teams' });
-      
+      univerRef.current = univerAPI
+      univerAPI.createWorkbook({ id: 'Sheet1', name: 'Champions League Teams' })
     }
   }, []);
 
